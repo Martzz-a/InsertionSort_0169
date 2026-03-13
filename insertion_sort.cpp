@@ -6,7 +6,7 @@ int n;        //membuat variable inputan n
 
 void input(){
     while(true){
-        cout << "Masukan Juamlah Data pada Array : ";
+        cout << "Masukan Jumlah Data pada Array : ";
         cin >> n;
 
         if(n <= 20){
@@ -43,7 +43,7 @@ void insertionSort(){
             j--;
         }
 
-        arr[j = 1] = temp;
+        arr[j + 1] = temp;
         cout << "\nStep" << i << ": ";
 
         for(int k = 0; k< n; k++){
@@ -58,7 +58,7 @@ void display(){
     cout << "\nElement Array";
     cout << "\n=============" << endl;
 
-    for(int j = 0; j <n; j++){
+    for(int j = 0; j < n; j++){
         cout << arr[j] << endl;
     }
 
