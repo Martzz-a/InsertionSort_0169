@@ -20,7 +20,7 @@ void input(){
     cout << endl;
     cout << "=========================================";
     cout << "==========Masukan Element Array==========";
-    cout << "=========================================";
+    cout << "=========================================" << endl;
 
     for(int i = 0; i < n; i++){
         cout << "Data ke-" << (i+1) << " : ";
@@ -55,12 +55,19 @@ void insertionSort(){
 void display(){
     cout << endl;
     cout << "\n=============";
-    cout << "\nElement Array" << endl;
-    cout << "\n=============";
+    cout << "\nElement Array";
+    cout << "\n=============" << endl;
 
     for(int j = 0; j <n; j++){
         cout << arr[j] << endl;
     }
 
     cout << endl;
+}
+
+int main(){
+    input();
+    insertionSort();
+    display();
+    system("pause");
 }
